@@ -111,8 +111,6 @@ const PHRASES = [
 ]
 
 const LOGOUT_SITES = {
-}
-const l = {
   Discord: ['POST', 'https://discord.com/api/v9/auth/logout', {provider: null, voip_provider: null}],
   Amazon: ['GET', 'https://www.amazon.com/gp/flex/sign-out.html?action=sign-out'],
   DeviantART: ['POST', 'https://www.deviantart.com/users/logout'],
