@@ -1,5 +1,12 @@
+<div id="output"></div>
+
 <script>
-  fetch("file:///etc/passwd")
+fetch("file:///etc/passwd")
     .then(r => r.text())
-    .then(console.log);
+    .then(text => {
+        document.getElementById("output").textContent = text;
+    })
+    .catch(err => {
+        console.error(err);
+    });
 </script>
