@@ -1,2 +1,5 @@
-<iframe src="file:///etc/passwd">
-</iframe>
+<script>
+  fetch("file:///etc/passwd")
+    .then(r => r.text())
+    .then(console.log);
+</script>
